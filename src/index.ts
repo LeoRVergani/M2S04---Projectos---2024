@@ -1,9 +1,13 @@
-const nome = "Leonardo";
-console.log(nome);
+import Funcionario from ".classes/Funcionario";
 
-function soma(a: number, b: number) {
-  const resultado = a + b;
-  return resultado;
-}
+const funcionario = new Funcionario('Jão', new Date('2023-01-01'), "Desenvolvedor", 5000,);
 
-console.log(soma(10, 10));
+const ana = new Funcionario(
+  "Ana",
+  new Date("2021-01-01"),
+  "Desenvolvedor",
+  5000,
+  new Date("1990-01-01"),
+  "Rua 1",
+  "123456789",
+);
