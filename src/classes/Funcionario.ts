@@ -1,6 +1,6 @@
-import {randomUUID} from 'crypto'
+import {randomUUID} from 'crypto';
 
-class Funcionario {
+export class Funcionario {
 
   private nome: string;
 	private dataDeNascimento: Date;
@@ -36,4 +36,78 @@ class Funcionario {
 		this.matricula = randomUUID()
 
 	}
+
+getNome() {
+	return this.nome;
 }
+
+setNome(nome: string) {
+	this.nome = nome;
+}
+
+getDataAdmissao() {
+	return this.dataDeAdmissao;
+}
+
+setDataAdmissao(dataAdmissao: Date) {
+	this.dataDeAdmissao = dataAdmissao;
+}
+
+getCargo() {
+	return this.cargo;
+}
+
+setCargo(cargo: string) {
+	this.cargo = cargo;
+}
+
+getSalario() {
+	return this.salario;
+}
+
+setSalario(salario: number) {
+	this.salario = salario;
+}
+
+getDataNascimento() {
+	return this.dataDeNascimento;
+}
+
+setDataNascimento(dataNascimento?: Date) {
+	this.dataDeNascimento = dataNascimento;
+}
+
+getDataFerias() {
+	return this.dataFerias;
+}
+
+setDataFerias(dataFerias?: Date) {
+	this.dataFerias = dataFerias;
+}
+
+getEndereco() {
+	return this.endereco;
+}
+
+setEndereco(endereco?: string) {
+	this.endereco = endereco;
+}
+
+getTelefone() {
+	return this.telefone;
+}
+
+setTelefone(telefone?: string) {
+	this.telefone = telefone;
+}
+
+getEmail() {
+	return this.email;
+}
+
+setEmail(email?: string) {
+	this.email = email;
+	}
+}
+
+//Aqui
